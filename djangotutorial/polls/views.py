@@ -6,6 +6,7 @@ from .models import Choice, Question
 from django.views import generic
 from django.template import loader
 from django.http import Http404
+from django.utils import timezone
 # Create your views here.
 
 class IndexView(generic.ListView):
