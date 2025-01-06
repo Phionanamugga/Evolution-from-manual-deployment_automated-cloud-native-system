@@ -1,6 +1,7 @@
 from django.db import models
 import datetime
 from django.utils import timezone
+from django.contrib import admin
 
 # Create your models here.
 class Question(models.Model):
@@ -8,23 +9,14 @@ class Question(models.Model):
     def __str__(self):
         return self.question_text
 
-    def test_was_published_recently_with_old_question(self):
-        time = timezone.now() - datetime.timedelta(days=1, seconds=1)
-        old_question = Question(pub_date=time)
-        self.assertIs(old_question.was_published_recently(), False)
-
-    """
-    was_published_recently() returns False for questions whose pub_date
-    is older than 1 day.
-    """
-    def test_was_published_recently_with_recent_question(self):
-        time = timezone.now() - datetime.timedelta(hours=23, minutes=59, seconds=59)
-        recent_question = Question(pub_date=time)
-        self.assertIs(recent_question.was_published_recently(), True)
-    """
-    was_published_recently() returns True for questions whose pub_date
-    is within the last day.
-    """
+    @admin.display(
+        boolean=True,
+        ordering="pub_date",
+        description="Published recently?",
+    )
+    def was_published_recently(self):
+        now = timezone.now()
+        return now - datetime.timedelta(days=1) <= self.pub_date <= now
     
 class Choice(models.Model):
     # ...
