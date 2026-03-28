@@ -19,3 +19,10 @@ Automated provisioning and deployment
 Environment consistency (Dev/Prod parity)
 Modular system design
 Failure-aware system thinking
+
+## 🏗️ Architecture
+This system provisions infrastructure and deploys an application using a layered approach:
+Terraform provisions cloud infrastructure
+Ansible configures servers and installs dependencies
+systemd manages application lifecycle
+Node.js application runs as a managed service
