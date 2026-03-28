@@ -92,3 +92,9 @@ Kubernetes orchestration
 Monitoring (metrics + logs)
 Multi-environment deployments (dev/staging/prod)
 Remote Terraform state management
+
+## 📸 Demo
+Screenshots or GIFs here showing:
+Infrastructure provisioning
+Successful deployment
+Running application
