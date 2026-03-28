@@ -47,3 +47,11 @@ cd terraform
 terraform init
 terraform plan
 terraform applyterraform apply
+
+## Step 2: Configuration Management
+Ansible configures the provisioned servers:
+Installs runtime dependencies
+Deploys application code
+Sets up services
+cd ansible
+ansible-playbook -i inventory playbook.yml
