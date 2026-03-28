@@ -10,3 +10,12 @@ To simulate how real world systems evolve by answering:
 How do we ensure consistency across environments?
 How do we design systems that are reproducible, scalable, and fault-tolerant?
 How do we move from manual deployments to automation?
+
+## 🧠 Key Concepts Demonstrated
+Infrastructure as Code (Terraform)
+Configuration Management (Ansible)
+Service Management (systemd)
+Automated provisioning and deployment
+Environment consistency (Dev/Prod parity)
+Modular system design
+Failure-aware system thinking
