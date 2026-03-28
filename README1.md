@@ -26,3 +26,14 @@ Terraform provisions cloud infrastructure
 Ansible configures servers and installs dependencies
 systemd manages application lifecycle
 Node.js application runs as a managed service
+
+## 📂 Project Structure
+.
+├── architecture/          # System design diagrams
+├── terraform/             # Infrastructure provisioning
+├── ansible/               # Configuration management
+├── systemd/               # Service definitions
+├── scripts/               # Automation scripts
+├── docs/                  # Supporting documentation
+├── app/                   # Application source code
+├── README.md
