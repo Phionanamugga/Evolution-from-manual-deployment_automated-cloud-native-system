@@ -84,3 +84,11 @@ Future improvements:
 Health checks
 Load balancing
 Rollback strategies
+
+## 📊 Future Enhancements
+CI/CD pipeline integration
+Docker containerization
+Kubernetes orchestration
+Monitoring (metrics + logs)
+Multi-environment deployments (dev/staging/prod)
+Remote Terraform state management
