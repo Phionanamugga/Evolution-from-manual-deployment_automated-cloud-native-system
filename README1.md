@@ -37,3 +37,13 @@ Node.js application runs as a managed service
 ├── docs/                  # Supporting documentation
 ├── app/                   # Application source code
 ├── README.md
+
+## ⚙️ How It Works
+Step 1: Infrastructure Provisioning
+
+Terraform creates the required infrastructure (e.g., compute instances, networking).
+
+cd terraform
+terraform init
+terraform plan
+terraform applyterraform apply
