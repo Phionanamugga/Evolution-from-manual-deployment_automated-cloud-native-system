@@ -61,3 +61,6 @@ The application is managed using systemd:
 Auto-start on boot
 Restart on failure
 Centralized logging
+
+# Step 4: Application Deployment
+A lightweight Node.js application is deployed and served.
