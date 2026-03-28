@@ -62,5 +62,25 @@ Auto-start on boot
 Restart on failure
 Centralized logging
 
-# Step 4: Application Deployment
+##  Step 4: Application Deployment
 A lightweight Node.js application is deployed and served.
+
+## 🔁 System Evolution
+Version	Description
+v1	Manual deployment on a single server
+v2	Automated provisioning + configuration (this project)
+v3	CI/CD integration (planned)
+v4	Scalable, containerized architecture (planned)
+
+## 🛡️ Reliability & Failure Handling
+This project incorporates basic resilience principles:
+
+Idempotent configuration (safe re-runs)
+Service auto-restart via systemd
+Separation of provisioning and configuration
+Clear deployment pipeline stages
+
+Future improvements:
+Health checks
+Load balancing
+Rollback strategies
