@@ -55,3 +55,9 @@ Deploys application code
 Sets up services
 cd ansible
 ansible-playbook -i inventory playbook.yml
+
+## Step 3: Service Orchestration
+The application is managed using systemd:
+Auto-start on boot
+Restart on failure
+Centralized logging
